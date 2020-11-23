@@ -47,19 +47,9 @@ display:none !important;
         }
     </script>
    <script src="./js/jquery-3.3.1.min.js"></script>
-<?php session_start(); ?>
-<?php
-if($_SESSION["sky"]){
-echo "<script>changeSchemeTo('sky-net.css')</script>";
-}
-?>
+
 
 <body>
-    <div class="container" style="margin-bottom: 200px;">
-        <div class="pos-fixed z-top p-4 bg-light" style="top: 10px; right: 10px;">
-            <button class="button" id="dar" style="background-color: #585b5d" onclick="changeSchemeTo('darcula.css')">darcula</button>
-            <button class="button" id="sky" style="background-color: #0CA9F2" onclick="changeSchemeTo('sky-net.css')">sky-net</button>
-        </div>
 <script>
 $("#dar").click(function(){
   $.ajax('theme.php',
